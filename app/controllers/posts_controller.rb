@@ -1,9 +1,10 @@
 class PostsController < ApplicationController
-  def index
-    @posts = [
-      "夕食何にしようかな",
-      "明日のプレゼンテーションやだなぁ"
-    ]
 
+  def index
+    @posts = Post.all
   end
+
+  def show
+  end
+
 end
